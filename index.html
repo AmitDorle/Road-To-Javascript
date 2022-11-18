@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road To JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/slider.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="title-container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand ms-3" href="#">
+                <img src="./img/logo-img.png" alt="Logo" width="45px" class="d-inline-block align-text-top">
+                <span class="ms-2 brand-name">Road To JS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-lg-auto mx-5">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="login-btn">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class=" modal-login hidden">
+            <div class="center">
+                <div class="container-login">
+                    <button class="close-modal-button">&times;</button>
+                    <div class="text">Login Form</div>
+                    <form action="#">
+                        <div class="data">
+                            <label>Email or Phone</label>
+                            <input type="text">
+                        </div>
+                        <div class="data">
+                            <label>Password</label>
+                            <input type="password">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-outline-primary px-6 mt-4">&nbsp;Login &nbsp;</button>
+                            <button type="button" class="btn btn-primary px-6 mt-3">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+
+
+
+        <div class="container-fluid text-center">
+            <div class="row">
+
+                <div class="col-md-6 heading-container">
+                    <h2 class="sub-heading mt-6">The best collection of
+                        javascript beginners <br>
+                        friendly projects</h2>
+                    <h2 class="sub-heading mt-6 mobile">The best collection of
+                        JS beginners friendly projects</h2>
+                    <a href="#projects"><button type="button"
+                            class="btn btn-warning px-4 mt-lg-3 mt-md-2">Explore</button></a>
+                    <a href="#call-us"><button type="button"
+                            class="btn btn-outline-warning px-4 ms-4 mt-lg-3 mt-md-2">Call Us</button></a>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid mt-lg-4 mt-md-0" src="./img/js-tutorials-e.png" alt="JS">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="project-section" id="projects">
+        <div class="container-fluid">
+            <h2 class="project-heading mb-5">javascript projects</h2>
+
+            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/pig-game.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-1 rounded-bottom">
+                            <h5 class="card-title">Pig Game</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/pig-game-main"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/pig-game-main/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/guess-my-number.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-2 rounded-bottom">
+                            <h5 class="card-title">Guess my number</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/guess-my-number-game-main"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/guess-my-number-game-main/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/calculator.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-3 rounded-bottom">
+                            <h5 class="card-title">Calculator</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/calculator"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/calculator/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/stop-watch.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-4 rounded-bottom">
+                            <h5 class="card-title">Stop watch</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/stopwatch"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/stopwatch/stopwatch.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/quiz.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-5 rounded-bottom">
+                            <h5 class="card-title">Quiz Game</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/Quiz%20app"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/Quiz app/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/digital-clock.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-4 rounded-bottom">
+                            <h5 class="card-title">Digital Clock</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/digital-clock"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/digital-clock/digital.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/pairing.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-2 rounded-bottom">
+                            <h5 class="card-title">Pair Game</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/memory%20game"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/memory game/pair-game.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/bmi.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-1 rounded-bottom">
+                            <h5 class="card-title">BMI calculator</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/calculator-bmi"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/calculator-bmi/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/alarm-clock.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-3 rounded-bottom">
+                            <h5 class="card-title">Alaram Clock</h5>
+                            <a href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/alarm"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/alarm/alarm.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/tik-tac-toe.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-1 rounded-bottom">
+                            <h5 class="card-title">Tic Tac Toe</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/tic-ta-toe"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/tic-ta-toe/tic-tac-toe.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/book.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-5 rounded-bottom">
+                            <h5 class="card-title">SI Calculator</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/cal-simple-interest"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/cal-simple-interest/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/list.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-4 rounded-bottom">
+                            <h5 class="card-title">To do list</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/To-do%20list"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/To-do list/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/word.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-2 rounded-bottom">
+                            <h5 class="card-title">Word counter</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/word-counter"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/word-counter/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/color-game.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-4 rounded-bottom">
+                            <h5 class="card-title">Color Game</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/background-change-onclick"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/background-change-onclick/background.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/drum.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-3 rounded-bottom">
+                            <h5 class="card-title">Drum Kit</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/drum-kit-main"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/drum-kit-main/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-bottom rounded-top">
+                        <div class="card-img-container">
+                            <img src="./img/captcha.png" class="project-card-image" alt="...">
+                        </div>
+                        <div class="card-body text-center card-bg-1 rounded-bottom">
+                            <h5 class="card-title">Captcha Validator</h5>
+                            <a
+                                href="https://github.com/satyampund/road-to-js-icp-3-group-d-/tree/main/projects/captcha-validator"><button
+                                    type="button" class="btn btn-dark btn-sm px-3 mt-3">Code</button></a>
+                            <a href="./projects/captcha-validator/index.html"><button type="button"
+                                    class="btn btn-outline-dark btn-sm px-3 mt-3 ms-3">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-us">
+        <h2 class="about-us-heading">About Us</h2>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide rounded-bottom rounded-top">
+                        <div class="image-content">
+                            <div class="card-image photo-border-1">
+                                <img src="./img/satyam-photo.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content card-bg-1 rounded-bottom">
+                            <h2 class="name">Satyam Pund</h2>
+                            <p class="description">He has completed his B.Tech from COEP. He is passionate about coding,
+                                cricket and like to read books.</p>
+
+                            <div class="social-media">
+                                <a href="https://github.com/satyampund"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/satyam-pund/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://wwwsatyam_2602.instagram.com//"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-container" id="call-us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <img class="footer-logo" src="./img/logo-img.png" alt="">
+                    <h5>Road To JS</h5>
+                    <div class="footer-social-media mb-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span>Quick Links</span>
+                    <div class="footer-border"></div>
+                    <div class="navigate-content">
+                        <a href="#">Home</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#about-us">About us</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <span>Contact us</span>
+                    <div class="footer-border"></div>
+                    <div class="navigate-content">
+                        <a
+                            href="https://www.google.com/maps/place/Pune,+Maharashtra/@18.5248904,73.7228783,11z/data=!3m1!4b1!4m5!3m4!1s0x3bc2bf2e67461101:0x828d43bf9d9ee343!8m2!3d18.5204303!4d73.8567437"><i
+                                class="fa-solid fa-location-dot"></i>&nbsp; &nbsp;Pune, Maharashtra</a>
+                        <a href="tel:9145271029"><i class="fa-solid fa-phone"></i> &nbsp; &nbsp;+91-123456789</a>
+                        <a href="mailto:Amitdorle111@gmail.com"><i class="fa-solid fa-envelope"></i> &nbsp; &nbsp;
+                            roadtojs@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <span>Our Newsletter</span>
+                    <div class="footer-border"></div>
+                    <p class="newsletter-des">Enter your email to get our news and updates.</p>
+                    <form action="" class="new-letter-form">
+                        <input type="emial" class="email-holder" placeholder="Enter your Email">
+                        <input type="submit" class="submit-btn" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
